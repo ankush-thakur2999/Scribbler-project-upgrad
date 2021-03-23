@@ -62,3 +62,39 @@ left: 42%;
     opacity: 0.5;
    
 }
+#Sign-in{
+
+    width: 300px;
+    height: 300px;
+    position:absolute;
+    top : 20%;
+    left :40%;
+    z-index: 1;
+    background-color:white;
+    padding: 50px 20px;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+#Sign-in input{
+    width: 300px;
+    height: 25px;
+    
+}
+#Sign-in h2{
+    text-align: center;
+}
+#Sign-in-Submit{
+    background-color:green;
+    border: none;
+    height: 35px;
+    color: white;
+    
+}
+#Sign-in i{
+    position: absolute;
+    top: 0%;
+    left:95%;
+}
