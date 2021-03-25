@@ -74,7 +74,7 @@ left: 42%;
     padding: 50px 20px;
     justify-content: center;
     align-items: center;
-
+    display: none;
 
 
 }
@@ -94,6 +94,42 @@ left: 42%;
     
 }
 #Sign-in i{
+    position: absolute;
+    top: 0%;
+    left:95%;
+}
+#Sign-up{
+
+    width: fit-content;
+    height: fit-content;
+    position:absolute;
+    top : 20%;
+    left :40%;
+    z-index: 1;
+    background-color:white;
+    padding: 50px 20px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+
+}
+#Sign-up input{
+    width: 300px;
+    height: 25px;
+    
+}
+#Sign-up h2{
+    text-align: center;
+}
+#Sign-up-Submit{
+    background-color:green;
+    border: none;
+    height: 35px;
+    color: white;
+    
+}
+#Sign-up i{
     position: absolute;
     top: 0%;
     left:95%;

@@ -8,11 +8,12 @@
  
     <link rel="stylesheet" href="css/index.css">
 </head>
+<body>
 <div id="header">
 <span id="heading">ScriBBler</span>
 
-    <button id ="top-btn-1">Sign in</button>
-    <button id ="top-btn-2">Sign up</button>
+    <button id ="top-btn-1"  onclick="signin()">Sign in</button>
+    <button id ="top-btn-2" id ="signupbox" onclick="signup()">Sign up</button>
     
 <span id ="motto">  Explore Imagine Create</span> 
 </div>
@@ -21,7 +22,7 @@
     <button><b>Create Post</b></button>
 </div>
 <div id ="Sign-in">
-    <i class="fa fa-close" id ="close" onclick=""></i>
+    <i class="fa fa-close" id ="close" onclick="closesigninbox()"></i>
     <h2>Welcome back!!</h2>
     <hr>
     <br>
@@ -33,14 +34,37 @@
     </label><br>
     <input type="password">
     <br> <br>
-    <input type="submit" onclick="signin()" id ="Sign-in-Submit" value="Sign in"><br>
+    <input type="submit"  id ="Sign-in-Submit" value="Sign in"><br>
 </form>
-    <p style="text-align: center;"><b>Not a Member ?</b> <span onclick="" style="color:blue;"> <b>Sign up</b></span> </p>
+    <p style="text-align: center;"><b>Not a Member ?</b> <span onclick="signup()" style="color:blue;"> <b>Sign up</b></span> </p>
 </form>
 </div>
-<div id ="Sign-up"></div>
-<body>
-    <!-- TODO: Include all your code for the header and home page here -->
+<div id ="Sign-up">
+    <i class="fa fa-close" id ="close" onclick="closesignupbox()"></i>
+    <h2>Get Started</h2>
+    <hr>
+    <br>
+<form>
+    <label for="">Fullname</label><br>
+    <input type ="text">
+    <br><br>
+    <label for="">Username</label><br>
+    <input type ="text">
+    <br><br>
+    <label>Password
+    </label><br>
+    <input type="password">
+    <br> <br>
+    <label> Confirm Password
+    </label><br>
+    <input type="password">
+    <br> <br>
+    <input type="submit" onclick="check()" id ="Sign-up-Submit" value="Sign up"><br>
+</form>
+    <p style="text-align: center;"><b>Already  a Member ?</b> <span onclick="signin()" style="color:blue;"> <b>Sign in</b></span> </p>
+</form>
+</div>
+<script src="javascript/index.js"></script>
 </body>
 
 </html>
