@@ -20,7 +20,7 @@
 </div>
 <div id = "center-buttons">
     <button><b>All Posts</b></button>
-    <button><b>Create Post</b></button>
+    <button onclick="createpost()"><b>Create Post</b></button>
 </div>
 <div id ="Sign-in">
     <i class="fa fa-close" id ="close" onclick="closesigninbox()"></i>
@@ -38,32 +38,48 @@
     <input type="submit"  id ="Sign-in-Submit" value="Sign in"><br>
 </form>
     <p style="text-align: center;"><b>Not a Member ?</b> <span onclick="signup()" style="color:blue;"> <b>Sign up</b></span> </p>
-</form>
+
 </div>
 <div id ="Sign-up">
     <i class="fa fa-close" id ="close" onclick="closesignupbox()"></i>
     <h2>Get Started</h2>
     <hr>
     <br>
-<form>
+<form >
     <label for="">Fullname</label><br>
-    <input type ="text">
+    <input type ="text" id ="fullname">
     <br><br>
     <label for="">Username</label><br>
-    <input type ="text">
+    <input type ="text" id ="username">
     <br><br>
     <label>Password
     </label><br>
-    <input type="password">
+    <input type="password" id ="password">
     <br> <br>
     <label> Confirm Password
     </label><br>
-    <input type="password">
+    <input type="password" id="cpassword">
     <br> <br>
-    <input type="submit" onclick="check()" id ="Sign-up-Submit" value="Sign up"><br>
+    <input type="submit" onclick="check(event)" id ="Sign-up-Submit" value="Sign up"><br>
 </form>
     <p style="text-align: center;"><b>Already  a Member ?</b> <span onclick="signin()" style="color:blue;"> <b>Sign in</b></span> </p>
+
+</div>
+<div id ="post-box">
+    <i class="fa fa-close" id ="close" onclick="closepostbox()"></i>
+    <h2>Pen Your Post </h2>
+    <hr>
+    <br>
+<form>
+    <label for="">Title:</label><br>
+    <input type ="text" id ="postbox-title">
+    <br><br>
+    <label>Content:</label><br>
+    <textarea id ="poststub"></textarea>
+    <br> <br><br>
+    <input type="submit"  id ="postbox-Submit" value="Create"><br>
 </form>
+
 </div>
 <script src="javascript/index.js"></script>
 </body>

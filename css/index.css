@@ -143,3 +143,45 @@ left: 42%;
     display: none;
 
 }
+#post-box{
+
+    width: fit-content;
+    height: fit-content;
+    position:absolute;
+    top : 10%;
+    left :30%;
+    z-index: 3;
+    background-color:white;
+    padding: 50px 20px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    }
+
+#post-box h2{
+    text-align: center;
+}
+#postbox-Submit{
+    background-color:green;
+    border: none;
+    height: 35px;
+    color: white;
+    margin-left: 45%;
+    
+}
+#post-box i{
+    position: absolute;
+    top: 0%;
+    left:98%;
+}
+#poststub{
+    height: 300px;
+    width: 600px;
+    background-color: rgba(0,0,0,0.2);
+    border: none
+}
+#postbox-title{
+    width: 250px;
+    background-color: rgba(0,0,0,0.2);
+    border: none;
+}
