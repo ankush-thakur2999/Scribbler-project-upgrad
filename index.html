@@ -7,6 +7,7 @@
     <!-- TODO: Include Google Fonts file here -->
  
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
 </head>
 <body>
     <div id = "opaq"></div>
@@ -29,11 +30,11 @@
     <br>
 <form>
     <label for="">Username</label><br>
-    <input type ="text">
+    <input type ="text" required>
     <br><br>
     <label>Password
     </label><br>
-    <input type="password">
+    <input type="password" required>
     <br> <br>
     <input type="submit"  id ="Sign-in-Submit" value="Sign in"><br>
 </form>
@@ -47,22 +48,23 @@
     <br>
 <form >
     <label for="">Fullname</label><br>
-    <input type ="text" id ="fullname">
+    <input type ="text" id ="fullname" required>
     <br><br>
     <label for="">Username</label><br>
-    <input type ="text" id ="username">
+    <input type ="text" id ="username" required>
     <br><br>
     <label>Password
     </label><br>
-    <input type="password" id ="password">
+    <input type="password" id ="password" required>
     <br> <br>
     <label> Confirm Password
     </label><br>
-    <input type="password" id="cpassword">
+    <input type="password" id="cpassword" required>
     <br> <br>
     <input type="submit" onclick="check(event)" id ="Sign-up-Submit" value="Sign up"><br>
+   
 </form>
-    <p style="text-align: center;"><b>Already  a Member ?</b> <span onclick="signin()" style="color:blue;"> <b>Sign in</b></span> </p>
+    <p style="text-align: center;"><b>Already  a Member ?</b> <span onclick="signin()" style="color:blue;"> <b>Sign in</b></span> </p> <br>
 
 </div>
 <div id ="post-box">
@@ -72,10 +74,10 @@
     <br>
 <form>
     <label for="">Title:</label><br>
-    <input type ="text" id ="postbox-title">
+    <input type ="text" id ="postbox-title" required>
     <br><br>
     <label>Content:</label><br>
-    <textarea id ="poststub"></textarea>
+    <textarea id ="poststub" required></textarea>
     <br> <br><br>
     <input type="submit"  id ="postbox-Submit" value="Create"><br>
 </form>
